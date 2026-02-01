@@ -1,0 +1,443 @@
+html,
+body {
+  overflow-x: hidden;
+
+}
+
+.header-logo {
+  margin-left: 200px;
+  margin-top: 60px;
+}
+
+.basic-text {
+  height: 70vh;
+}
+
+.header-text {
+  margin-left: -100px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  transform: translateX(-2px) translateY(-51px);
+  font-size: 11px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
+.header-text h2 {
+  transform: translateY(-4px);
+  color: rgba(105, 104, 113, 1);
+  font-size: 23px;
+}
+
+.header-text h1 {
+  color: rgba(25, 25, 27, 1);
+}
+
+.header-text :hover {
+  filter: brightness(80%);
+}
+
+.header-line {
+  width: 58px;
+  height: 3px;
+  transform: translateX(583px) translateY(-60px);
+  background-color: rgba(84, 84, 212, 1);
+}
+
+.header-btn {
+  margin-left: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-140px);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 113, 67, 1);
+  width: 280px;
+  height: 80px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
+.header-btn:hover {
+  filter: brightness(85%);
+}
+
+.basic-text {
+  margin-left: 197px;
+  font-size: 30px;
+  margin-top: 170px;
+  transform: translateX(10px) translateY(-140px);
+}
+
+.basic-text p {
+  color: rgba(105, 104, 113, 1);
+}
+
+.hero {
+  transform: translateX(830px) translateY(-500px);
+}
+
+.basic-btn {
+  margin-left: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-1400px) translateY(40px);
+  color: rgba(255, 255, 255, 1);
+  background: rgba(84, 84, 212, 1);
+  width: 260px;
+  height: 65px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
+.basic-btn :hover {
+  filter: brightness(85%);
+}
+
+.scroll-down {
+  width: 60px;
+  height: 60px;
+  transform: translateX(350px) translateY(-675px);
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.scroll-down:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.subtittle-img {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+  transform: translateX(10px) translateY(-500px);
+  cursor: pointer;
+}
+
+.second-page {
+  height: 120vh;
+  transform: translateX(100px);
+}
+
+.second-tittle {
+  margin-left: 800px;
+  margin-top: 200px;
+  font-size: 20px;
+  transform: translateX(-20px) translateY(60px);
+}
+
+.second-tittle span {
+  color: rgba(84, 84, 212, 1);
+  font-weight: 550;
+}
+
+.second-tittle p {
+  font-size: 23px;
+  color: rgba(105, 104, 113, 1);
+}
+
+.hero2 {
+  transform: translateX(200px) translateY(-300px);
+}
+
+.second-subtittle {
+  transform: translateX(230px) translateY(-70px);
+  font-size: 20px;
+}
+
+.second-subtittle p {
+  font-size: 23px;
+  color: rgba(105, 104, 113, 1);
+}
+
+.second-subtittle span {
+  color: rgba(84, 84, 212, 1);
+  font-weight: 550;
+}
+
+.hero3 {
+  transform: translateX(940px) translateY(-450px);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 150px;
+  transform: translateX(-10px);
+}
+
+.cards p {
+  color: rgba(105, 104, 113, 1);
+}
+
+.debit-card,
+.Calculator {
+  text-align: center;
+}
+
+.Calculator img {
+  width: 170px;
+  height: auto;
+  transform: translateY(15px);
+}
+
+.Calculator {
+  transform: translateY(-50px);
+}
+
+.Camera {
+  transform: translateX(0px) translateY(-8px);
+  text-align: center;
+}
+.last-page-tittle {
+  display: flex;
+}
+
+.cards img {
+  display: block;
+  margin: 0 auto 20px;
+}
+.last-page-tittle h1 {
+  font-size: 60px;
+  margin-top: 130px;
+  margin-left: 300px;
+}
+
+.last-pag {
+  height: 50vh;
+}
+.toggle {
+  position: relative;
+  width: 420px;
+  height: 70px;
+  background: #f6f6fb;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+ transform: translateX(1100px) translateY(-120px);
+}
+
+/* прячем radio */
+.toggle input {
+  display: none;
+}
+
+/* фиолетовый фон */
+.slider {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: calc(50% - 6px);
+  height: calc(100% - 12px);
+  background: #5b5bd6;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+/* если выбран Monthly — сдвигаем */
+#monthly:checked ~ .slider {
+  left: calc(50% + 0px);
+}
+
+/* кнопки */
+.toggle label {
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
+  user-select: none;
+}
+
+/* цвет текста */
+#yearly:checked ~ label[for="yearly"],
+#monthly:checked ~ label[for="monthly"] {
+  color: #fff;
+}
+
+#yearly:not(:checked) ~ label[for="yearly"],
+#monthly:not(:checked) ~ label[for="monthly"] {
+  color: #000;
+}
+.bill-cards{
+  display: flex;
+  height: 55vh;
+}
+.card1 {
+  margin-right: 900px;
+  position: absolute;
+  top: 2965px;    /* прижмёт к верху родителя */
+  left: 22px;
+  text-align: center;
+ background: rgba(248, 248, 248, 1);
+ width: 340px;
+  z-index: 10;  
+align-items: center;
+ height: 300px;
+ padding-top: 40px;
+ padding-bottom: 90px;
+ border-radius: 10px;
+ transform: translateY(-90px);
+ transform: translateX(300px);
+
+}
+.card1 h1 {
+  font-size: 60px;
+}
+.card1 h4 {
+  font-size: 18px;
+  color: rgba(105, 104, 113, 1);
+
+}
+.card1 p {
+  color: rgba(105, 104, 113, 1);
+  font-size: 17px;
+
+}
+.card2 {
+  position: absolute;
+  top: 2950px;
+  left: 380px;
+  width: 410px;
+  height: 420px;
+  background: rgba(255, 113, 67, 1);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+ 
+  transform: translateX(300px);
+}
+
+/* Premium */
+.plan-name {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+/* $29 /month */
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 4px;
+  margin-bottom: 40px;
+}
+
+.price-value {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.price-period {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* пункты */
+.card2 p {
+  font-size: 19px;
+  margin: 16px 0;
+}
+/* card3 — Enterprise */
+.card3 {
+  position: absolute;
+  top: 2964px;
+  left: 808px;
+  width: 340px;
+  height: 391px;
+  background: rgba(248, 248, 248, 1);
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 40px;
+  transform: translateX(300px);
+}
+
+/* тёмная цена */
+.price.dark {
+  color: #1e2a3b;
+}
+
+/* текст */
+.card3 p {
+  font-size: 19px;
+  margin: 16px 0;
+  color: rgba(105, 104, 113, 1);
+}
+
+/* название тарифа */
+.plan-name.enterprise {
+  color: rgba(105, 104, 113, 1);
+}
+.card1-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-20px);
+  transform: translateX(30px);
+ color: rgba(84, 84, 212, 1);
+ background: rgba(255, 255, 255, 1);
+  width: 285px;
+  height: 55px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, filter 0.3s ease;
+
+}
+.card2-btn {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 360px;
+  left: 0px;
+  transform: translateY(-50px);
+  transform: translateX(43px);
+   color: rgba(255, 255, 255, 1);
+   background: rgba(159, 57, 25, 1);
+  width: 330px;
+  height: 55px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, filter 0.3s ease;
+}
+.card3-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 344px;
+  left: 0px;
+  transform: translateY(-10px);
+  transform: translateX(30px);
+ color: rgba(84, 84, 212, 1);
+ background: rgba(255, 255, 255, 1);
+  width: 285px;
+  height: 55px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, filter 0.3s ease;
+
+}
