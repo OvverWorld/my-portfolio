@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+/* ---- Header ---- */
+.header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.header-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.header-content {
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    right: 120px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+}
+
+.header-logo {
+    padding: 10px;
+}
+
+.header-tittle {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+}
+
+.header-tittle h2 {
+    font-size: 20px;
+}
+
+.header-tittle h3 {
+    width: 130px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-top: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.first-tittle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 10;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* ---- Buttons ---- */
+.btn {
+    background-color: rgba(90, 185, 99, 1);
+    z-index: 10;
+    margin-top: 120px;
+    margin-left: 80px;
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+    font-weight: 600;
+    border: none;
+    padding: 12px 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.btn:hover {
+    filter: brightness(85%);
+}
+
+/* ---- Modal ---- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.modal-content {
+    background-color: blueviolet;
+    margin: 15% auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ---- Cards ---- */
+.first-page {
+    margin-top: 130px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.first-page-tittle {
+    font-size: 15px;
+    margin-left: 150px;
+}
+
+.first-page-tittle span {
+    color: rgba(153, 153, 153, 1);
+    font-size: 23px;
+}
+
+.carts {
+    margin-top: 50px;
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    margin-right: 120px;
+}
+
+.carts .cart {
+    width: 377px;
+    height: 330px;
+    border: 1px solid rgba(247, 247, 247, 1);
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.cart img {
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.cart-tittle {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+.cart-tittle p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgba(153, 153, 153, 1);
+}
+
+/* ---- Food Section ---- */
+.food-section {
+    width: 100%;
+    text-align: center;
+    margin: 150px 0;
+    height: 115vh;
+}
+
+.food-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.food-img img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.food-text {
+    margin-top: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.food-text h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.food-text h1 span {
+    display: block;
+    font-weight: normal;
+    color: #999;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.food-link {
+    margin-top: 25px;
+    font-size: 14px;
+    color: rgb(90, 185, 99);
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.food-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -130px;
+    width: 1300px;
+    height: 2px;
+    background-color: rgb(206, 202, 202);
+    border-radius: 2px;
+}
+
+/* ---- Third Page ---- */
+.third-page {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    padding: 100px 150px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.image img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.text {
+    max-width: 500px;
+}
+
+.text h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.text span {
+    color: #999;
+    font-weight: normal;
+}
+
+.text p {
+    color: #777;
+    line-height: 1.6;
+}
+
+.section.offset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+}
+
+.section.offset .text {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.section.offset .image {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 200px;
+    margin-left: 250px;
+}
+
+.rec {
+    margin-left: 500px;
+}
+
+.rec p {
+    margin-top: 30px;
+    margin-left: 165px;
+    color: rgba(90, 185, 99, 1);
+    font-size: 13px;
+}
+
+.rec-line {
+    width: 1300px;
+    height: 2px;
+    background-color: rgb(206, 202, 202);
+    border-radius: 2px;
+    margin-top: 150px;
+    left: 30%;
+    transform: translateX(-30%);
+}
+
+.pred-end {
+    height: 30vh;
+}
+
+.pred-tittle {
+    display: flex;
+
+    gap: 15px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+.pred-tittle h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(90, 185, 99, 1);
+}
+
+.pred-line {
+    width: 40px;
+    height: 2px;
+    background-color: rgb(90, 185, 99);
+    border-radius: 2px;
+       transform: translate(var(--line-x, 315px), var(--line-y,-100px));
+     
+       
+}
+
+.pred-tittle p {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-right: 200px;
+    left: 50%;
+    transform: translateX(-28%);
+}
+.pred-tittle span {
+     color: rgba(153, 153, 153, 1);
+}
+.pred-btn {
+    background-color: rgba(90, 185, 99, 1);
+    margin-left: 1300px;
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.1s ease;
+    cursor: pointer;
+    display: flex;              /* <--- меняем на flex */
+    justify-content: center;    /* горизонтально центрируем */
+    align-items: center;        /* вертикально центрируем */
+    user-select: none;
+    font-weight: 600;
+    border: none;
+    color: white;
+    font-size: 15px;
+    z-index: 10;
+    transform: translateY(var(--line-y, -245px)); /* оставляем, если нужно смещение */
+}
+.pred-btn :hover {
+  filter: brightness(85%);
+}
